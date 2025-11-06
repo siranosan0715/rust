@@ -1,0 +1,22 @@
+[package]
+name = "qiita_poise"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 非同期ランタイム。ボットを動かすために必須です。
+tokio = { version = "1", features = ["full"] } 
+
+# Discord Bot フレームワーク。Serenityの上に構築されています。
+# 最新の安定バージョンを指定することを推奨します。
+poise = "0.6" 
+
+# ボットトークンを .env ファイルから読み込むために使用します。
+dotenvy = "0.15" 
+
+# Poiseが使用するエラー処理のためのクレートです。
+thiserror = "1.0" 
+
+# (オプション) デバッグやログ出力に役立ちます。
+env_logger = "0.10" 
+log = "0.4"
